@@ -1,0 +1,11 @@
+Testing Method: Started a test HTTP server on Kali (port 80) using 
+'sudo python3 -m http.server 80', then attempted connection from the 
+Windows host machine (10.62.160.83) to the Kali VM (10.62.160.204) 
+on port 80 using PowerShell's Test-NetConnection cmdlet.
+
+Result:
+TcpTestSucceeded : False
+
+Conclusion: The UFW rule "deny http" (port 80) successfully blocked 
+the incoming connection attempt from an external machine, confirming 
+the firewall rule is working as intended.
